@@ -41,7 +41,7 @@ const chai = ()=>{       //arrow function
 //     return num1 + num2
 // }
 
-// implicit return 
+// implicit return ;
 // const addTwo=(num1,num2)=> num1 + num2
 
 //curly braces use kie to return type likhna parega , ni use kie

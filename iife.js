@@ -5,7 +5,7 @@
 })(); //add semicolon if we want to make more iife
 
 
-//unnamed iife
+//unnamed iife;
 (()=>{ 
     console.log(`Car Loaded Again`);
     
