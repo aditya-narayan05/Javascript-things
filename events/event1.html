@@ -19,8 +19,20 @@
     </div>
 </body>
 <script>
-     document.getElementById("2").onclick = function(){
-        alert("Why you clicked on picture!!,huh!")
-     }
+    //  document.getElementById("2").onclick = function(){
+    //     alert("Why you clicked on picture!!,huh!")
+    //   }              /not a suitable approach  
+
+    document.getElementById('2').addEventListener('click',function(){
+               alert("Why you clicked on picture!!,huh!")
+    },false)
+
+    //attachEvent()
+    //jQuery
+    //for learning
+    //type,timestamp,defaultPrevented
+    //target , toElement , srcElement , currentTarget,
+    //clientX , clientY , screenX , screenY
+    //altKey , ctrlKey , shiftkey , keyCode
 </script>
 </html>
