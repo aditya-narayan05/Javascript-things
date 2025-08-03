@@ -34,5 +34,26 @@
     //target , toElement , srcElement , currentTarget,
     //clientX , clientY , screenX , screenY
     //altKey , ctrlKey , shiftkey , keyCode
+
+    document.getElementById("images").addEventListener('click',function(e){
+        alert("Images touched form UL")
+    },false); //capturing & bubbling true false
+    
+    // document.getElementById("4").addEventListener('mouseover',function(e){
+    //     alert("Why are you howeirng on this!!");
+    // })
+    document.getElementById("4").addEventListener('click',function(e){
+        alert("No Touchy Touchy")
+        e.stopPropagation()
+    },false)
+
+
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log("google clicked")   
+        e.preventDefault()
+        e.stopPropagation()
+            
+            
+    })
 </script>
 </html>
