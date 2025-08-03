@@ -23,9 +23,10 @@
     //     alert("Why you clicked on picture!!,huh!")
     //   }              /not a suitable approach  
 
-    document.getElementById('2').addEventListener('click',function(){
+    document.getElementById('2').addEventListener('click',function(e){
                alert("Why you clicked on picture!!,huh!")
-    },false)
+               e.stopPropagation()
+    })
 
     //attachEvent()
     //jQuery
@@ -35,9 +36,10 @@
     //clientX , clientY , screenX , screenY
     //altKey , ctrlKey , shiftkey , keyCode
 
-    document.getElementById("images").addEventListener('click',function(e){
-        alert("Images touched form UL")
-    },false); //capturing & bubbling true false
+    // document.getElementById("images").addEventListener('click',function(e){
+    //     alert("Images touched form UL")
+        
+    // },false); //capturing & bubbling true false
     
     // document.getElementById("4").addEventListener('mouseover',function(e){
     //     alert("Why are you howeirng on this!!");
@@ -52,8 +54,13 @@
         console.log("google clicked")   
         e.preventDefault()
         e.stopPropagation()
-            
-            
+              
+    })
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e.target.parentNode)
+        const removeIT = e.target.parentNode
+        removeIT.remove();
     })
 </script>
 </html>
