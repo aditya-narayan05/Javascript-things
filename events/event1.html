@@ -57,10 +57,25 @@
               
     })
 
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log(e.target.parentNode)
+    //     const removeIT = e.target.parentNode
+    //     removeIT.remove();
+    // })
+
     document.getElementById('images').addEventListener('click',function(e){
-        console.log(e.target.parentNode)
-        const removeIT = e.target.parentNode
-        removeIT.remove();
+        console.log(e.target.tagName);
+        
+        if(e.target.tagName==='IMG'){
+            const removeIT=e.target.parentNode
+            removeIT.remove();
+            
+        }
+        else{
+            console.log("No , not deleting everything");
+            
+        }
+        
     })
 </script>
 </html>
