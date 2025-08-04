@@ -118,3 +118,4 @@ fetch('https://dummyjson.com/users')
     console.log(error);
     
 })
+ //in fetch the 404 error which is shown is a response not a reject - interview question generally
