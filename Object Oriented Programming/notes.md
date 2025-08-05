@@ -19,3 +19,6 @@ Object literal (means literally)
 ## 4 pillars
 Abstraction(fetch) , Encaptulation(wrap up of data) , Inheritance() , Polymorphism()
 
+## function
+function is function and function is object 
+object prototype is null
